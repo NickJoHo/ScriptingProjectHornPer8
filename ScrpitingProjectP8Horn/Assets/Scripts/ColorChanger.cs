@@ -37,6 +37,10 @@ public class ColorChanger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             GetComponent<Renderer>().material.color = Color.clear;
+            if (Input.GetKeyDown(KeyCode.Q))
+            {
+                GetComponent<Renderer>().material.color = Color.gray;
             }
         }
     }
+}
