@@ -5,18 +5,26 @@ using UnityEngine.UIElements;
 
 public class IfStatements : MonoBehaviour
 {
-    float coffeeTemperature = 45.0f;
+    float coffeeTemperature = 85.0f;
     float hotLimitTemperature = 70.0f;
     float coldLimitTemperature = 40.0f;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            TemperatureTest();
+
+        coffeeTemperature -= Time.deltaTime * 5f;
+    }
+
+    void TemperatureTest ()
+    { 
         // If the coffe's temp. is greater than the hottest drinking temp...
         if (coffeeTemperature > hotLimitTemperature)
         {
