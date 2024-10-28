@@ -37,7 +37,7 @@ public class IfStatements : MonoBehaviour
             //... do this.
             print("Coffee is too cold.");
         }
-        // If it is neither of those then...
+        // If it is neither of t  se then...
         else
         {
             //... do this. 
