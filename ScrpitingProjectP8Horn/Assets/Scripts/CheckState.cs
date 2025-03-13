@@ -11,11 +11,5 @@ public class CheckState : MonoBehaviour
     {
         Debug.Log("Active Self: " + myObject.activeSelf);
         Debug.Log("Active in Hierarchy" + myObject.activeInHierarchy);
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
     }
 }
